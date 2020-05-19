@@ -10,7 +10,7 @@ git add dist/avid-covider-predictor && \
 git commit -m dist && \
 (git branch -D gh-pages || true) && \
 git subtree split --prefix dist/avid-covider-predictor -b gh-pages && \
-git push -f publish gh-pages:gh-pages && \
+git push -f origin gh-pages:gh-pages && \
 git checkout master && \
 git branch -D gh-pages && \
 git branch -D dist && \
