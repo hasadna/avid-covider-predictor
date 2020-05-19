@@ -1,21 +1,42 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class='content'>
+  <label>מגדר</label>
+  <div class='row'>
+    <app-toggle text='זכר' field='sex' [von]='"male"' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle text='נקבה' field='sex' [von]='"female"' [record]='record' (changed)='send()'></app-toggle>
+    <!--app-toggle text='other' field='sex' [von]='"other"' [record]='record' (changed)='send()'></app-toggle-->
+  </div>
+  <label>קבוצת גיל</label>
+  <div class='row'>
+    <app-toggle text='0-17' field='age' [von]='10' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle text='18-30' field='age' [von]='25' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle text='31-40' field='age' [von]='35' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle text='41-50' field='age' [von]='45' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle text='51-60' field='age' [von]='55' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle text='61-70' field='age' [von]='65' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle text='71-120' field='age' [von]='75' [record]='record' (changed)='send()'></app-toggle>
+  </div>
+  <label>תסמינים</label>
+  <div class='row'>
+    <app-toggle text='הרגשה כללית רעה' field='general_feeling' [von]='"feel_bad"' [voff]='"feel_good"' [record]='record' (changed)='send()'></app-toggle>
+  </div>
+  <div class='row'>
+    <app-toggle text='שיעולים או נזלת' field='toplevel_symptoms_cough' [von]='true' [voff]='false' [record]='record' (changed)='send()'></app-toggle>
+  </div>
+  <div class='row'>
+    <app-toggle text='קוצר נשימה' field='symptoms_breath_shortness' [von]='true' [voff]='false' [record]='record' (changed)='send()'></app-toggle>
+  </div>
+  <div class='row'>
+    <app-toggle text='איבוד את חוש הטעם או הריח' field='symptoms_smell_taste_loss' [von]='true' [voff]='false' [record]='record' (changed)='send()'></app-toggle>
+  </div>
+  <div class='row'>
+    <app-toggle text='כאבי גרון' field='symptoms_sore_throat' [von]='true' [voff]='false' [record]='record' (changed)='send()'></app-toggle>
+  </div>
+  <div class='row'>
+    <app-toggle text='חום גוף מעל 38 מעלות' field='temperature' [von]='39' [voff]='37' [record]='record' (changed)='send()'></app-toggle>
+  </div>
+  <div class='prediction'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" >
+      <text x=100 y=100 dy=25 *ngIf='prediction !== null'>{{prediction.toFixed(1)}}%</text>
+    </svg>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
-<router-outlet></router-outlet>
