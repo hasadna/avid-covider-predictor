@@ -4,7 +4,8 @@ git checkout master && \
 (git branch -D dist || true) && \
 git checkout -b dist && \
 rm .gitignore && \
-ng build --prod --base-href /avid-covider-predictor/ && \
+ng build --prod -c he && \
+ng build --prod -c en && \
 cp dist/avid-covider-predictor/index.html dist/avid-covider-predictor/404.html && \
 git add dist/avid-covider-predictor && \
 git commit -m dist && \

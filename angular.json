@@ -32,13 +32,16 @@
             "scripts": []
           },
           "configurations": {
-            "production": {
+            "he": {
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "outputPath": "dist/avid-covider-predictor/he",
+              "i18nLocale": "he",
+              "baseHref": "/avid-covider-predictor/he/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -55,7 +58,37 @@
                   "maximumError": "5mb"
                 }
               ]
-            }
+            },
+            "en": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputPath": "dist/avid-covider-predictor/en",
+              "i18nLocale": "en",
+              "baseHref": "/avid-covider-predictor/en/",
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nMissingTranslation": "ignore",
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }            
           }
         },
         "serve": {

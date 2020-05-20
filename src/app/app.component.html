@@ -1,13 +1,12 @@
-<div class='content'>
-  <label>מגדר</label>
+<div class='content' [style.direction]='direction'>
+  <label i18n>מגדר</label>
   <div class='row'>
-    <app-toggle text='זכר' field='sex' [von]='"male"' [record]='record' (changed)='send()'></app-toggle>
-    <app-toggle text='נקבה' field='sex' [von]='"female"' [record]='record' (changed)='send()'></app-toggle>
-    <app-toggle text='אחר' field='sex' [von]='"other"' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle i18n-text text='זכר' field='sex' [von]='"male"' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle i18n-text text='נקבה' field='sex' [von]='"female"' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle i18n-text text='אחר' field='sex' [von]='"other"' [record]='record' (changed)='send()'></app-toggle>
   </div>
-  <label>קבוצת גיל</label>
+  <label i18n>קבוצת גיל</label>
   <div class='row'>
-    <app-toggle text='0-17' field='age' [von]='10' [record]='record' (changed)='send()'></app-toggle>
     <app-toggle text='18-30' field='age' [von]='25' [record]='record' (changed)='send()'></app-toggle>
     <app-toggle text='31-40' field='age' [von]='35' [record]='record' (changed)='send()'></app-toggle>
     <app-toggle text='41-50' field='age' [von]='45' [record]='record' (changed)='send()'></app-toggle>
@@ -15,28 +14,49 @@
     <app-toggle text='61-70' field='age' [von]='65' [record]='record' (changed)='send()'></app-toggle>
     <app-toggle text='71-120' field='age' [von]='75' [record]='record' (changed)='send()'></app-toggle>
   </div>
-  <label>תסמינים</label>
+  <label i18n>תסמינים</label>
   <div class='row'>
-    <app-toggle text='הרגשה כללית רעה' field='general_feeling' [von]='"feel_bad"' [voff]='"feel_good"' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle i18n-text text='הרגשה כללית רעה' field='general_feeling' [von]='"feel_bad"' [voff]='"feel_good"' [record]='record' (changed)='record.no_symptoms=false; send()'></app-toggle>
   </div>
   <div class='row'>
-    <app-toggle text='שיעולים או נזלת' field='toplevel_symptoms_cough' [von]='true' [voff]='false' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle i18n-text text='שיעולים או נזלת' field='toplevel_symptoms_cough' [von]='true' [voff]='false' [record]='record' (changed)='record.no_symptoms=false; send()'></app-toggle>
   </div>
   <div class='row'>
-    <app-toggle text='קוצר נשימה' field='symptoms_breath_shortness' [von]='true' [voff]='false' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle i18n-text text='קוצר נשימה' field='symptoms_breath_shortness' [von]='true' [voff]='false' [record]='record' (changed)='record.no_symptoms=false; send()'></app-toggle>
   </div>
   <div class='row'>
-    <app-toggle text='איבוד את חוש הטעם או הריח' field='symptoms_smell_taste_loss' [von]='true' [voff]='false' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle i18n-text text='איבוד את חוש הטעם או הריח' field='symptoms_smell_taste_loss' [von]='true' [voff]='false' [record]='record' (changed)='record.no_symptoms=false; send()'></app-toggle>
   </div>
   <div class='row'>
-    <app-toggle text='כאבי גרון' field='symptoms_sore_throat' [von]='true' [voff]='false' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle i18n-text text='כאבי גרון' field='symptoms_sore_throat' [von]='true' [voff]='false' [record]='record' (changed)='record.no_symptoms=false; send()'></app-toggle>
   </div>
   <div class='row'>
-    <app-toggle text='חום גוף מעל 38 מעלות' field='temperature' [von]='39' [voff]='37' [record]='record' (changed)='send()'></app-toggle>
+    <app-toggle i18n-text text='חום גוף מעל 38 מעלות' field='temperature' [von]='39' [voff]='37' [record]='record' (changed)='record.no_symptoms=false; send()'></app-toggle>
   </div>
-  <div class='prediction'>
+  <div class='row'>
+    <app-toggle i18n-text text='אף אחד מאלו' field='no_symptoms' [von]='true' [record]='record' (changed)='clear(); send()'></app-toggle>
+  </div>
+  <div class='prediction' *ngIf='prediction !== null'>
+    <label i18n>דירוג הסימפטומים המשוקלל שלך הוא</label>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" >
-      <text x=100 y=100 dy=25 *ngIf='prediction !== null'>{{prediction.toFixed(1)}}%</text>
+      <text x=100 y=100 dy=25>{{prediction.toFixed(1)}}%</text>
     </svg>
+    <span class='small' i18n>דירוג זה משקף את הדמיון שלהם לתסמינים של אנשים שדיווחו על אבחנה חיובית של קורונה (COVID-19) במחקר הנ"ל.</span>
+    <span class='small' i18n>במידה ויש לך שאלות על מצבך הרפואי, אנא פנה לרופא שלך.</span>
+  </div>
+  <div class='explanation' *ngIf='explanationVisible'>
+    <div class='main-text'>
+      <h1 i18n>שקלול תסמינים לסיכוי לתוצאה חיובית בבדיקת קורונה (COVID-19)</h1>
+      <p i18n>אתר זה פותח לצורך הנגשת המאמר "את מי עלינו לבדוק ל- COVID-19? מודל תעדוף על בסיס סקר סימפטומים ארצי". במאמר זה פיתחנו מודל שמעריך את ההסתברות לבדיקה חיובית ל- COVID-19  על בסיס תשובות ל- 8 שאלות פשוטות הכוללות סימפטומים שתוארו כנלווים לזיהום ב- COVID-19. המודל פותח על בסיס נתונים מהשאלון הארצי שכלל דיווח על סימפטומים ותוצאות בדיקות חיוביות ל- COVID-19.</p>
+      <p>
+        <span i18n>חשוב לציין, שהבדיקות לקורונה מבוצעות בארץ על פי </span>&nbsp;
+        <a href='https://www.health.gov.il/Subjects/disease/corona/Pages/default.aspx' target='_blank' i18n>מדיניות משרד הבריאות הישראלי</a>.
+      </p>
+      <p i18n>מאחר והמודל פותח על נתונים של אנשים מבוגרים בלבד, לא ניתן להשתמש בו בילדים.</p>
+    </div>
+    <div class='ctas'>
+      <h2 i18n (click)='explanationVisible=false'>לשאלון</h2>
+      <h3><a [href]='locale === "he" ? "../en" : "../he"' i18n>English</a></h3>
+    </div>
   </div>
 </div>
