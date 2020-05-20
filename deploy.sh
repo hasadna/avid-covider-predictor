@@ -6,7 +6,8 @@ git checkout -b dist && \
 rm .gitignore && \
 ng build --prod -c he && \
 ng build --prod -c en && \
-cp dist/avid-covider-predictor/index.html dist/avid-covider-predictor/404.html && \
+cp dist/avid-covider-predictor/en/index.html dist/avid-covider-predictor/en/404.html && \
+cp dist/avid-covider-predictor/he/index.html dist/avid-covider-predictor/he/404.html && \
 git add dist/avid-covider-predictor && \
 git commit -m dist && \
 (git branch -D gh-pages || true) && \
