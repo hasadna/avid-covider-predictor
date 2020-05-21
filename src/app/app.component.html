@@ -25,7 +25,7 @@
     <app-toggle i18n-text text='קוצר נשימה' field='symptoms_breath_shortness' [von]='true' [voff]='false' [record]='record' (changed)='record.no_symptoms=false; send()'></app-toggle>
   </div>
   <div class='row'>
-    <app-toggle i18n-text text='איבוד את חוש הטעם או הריח' field='symptoms_smell_taste_loss' [von]='true' [voff]='false' [record]='record' (changed)='record.no_symptoms=false; send()'></app-toggle>
+    <app-toggle i18n-text text='אובדן חוש טעם או ריח' field='symptoms_smell_taste_loss' [von]='true' [voff]='false' [record]='record' (changed)='record.no_symptoms=false; send()'></app-toggle>
   </div>
   <div class='row'>
     <app-toggle i18n-text text='כאבי גרון' field='symptoms_sore_throat' [von]='true' [voff]='false' [record]='record' (changed)='record.no_symptoms=false; send()'></app-toggle>
@@ -37,17 +37,17 @@
     <app-toggle i18n-text text='אף אחד מאלו' field='no_symptoms' [von]='true' [record]='record' (changed)='clear(); send()'></app-toggle>
   </div>
   <div class='prediction' *ngIf='prediction !== null'>
-    <label i18n>דירוג הסימפטומים המשוקלל שלך הוא</label>
+    <label i18n>דירוג התסמינים המשוקלל שלך הוא</label>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" >
       <text x=100 y=100 dy=25>{{prediction.toFixed(1)}}%</text>
     </svg>
-    <span class='small' i18n>דירוג זה משקף את הדמיון שלהם לתסמינים של אנשים שדיווחו על אבחנה חיובית של קורונה (COVID-19) במחקר הנ"ל.</span>
+    <span class='small' i18n>דירוג זה משקף את הדמיון של התסמינים שדווחו לאלו של אנשים שדיווחו על אבחנה חיובית של קורונה (COVID-19) במחקר הנ"ל.</span>
     <span class='small' i18n>במידה ויש לך שאלות על מצבך הרפואי, אנא פנה לרופא שלך.</span>
   </div>
   <div class='explanation' *ngIf='explanationVisible'>
     <div class='main-text'>
       <h1 i18n>שקלול תסמינים לסיכוי לתוצאה חיובית בבדיקת קורונה (COVID-19)</h1>
-      <p i18n>אתר זה פותח לצורך הנגשת המאמר "את מי עלינו לבדוק ל- COVID-19? מודל תעדוף על בסיס סקר סימפטומים ארצי". במאמר זה פיתחנו מודל שמעריך את ההסתברות לבדיקה חיובית ל- COVID-19  על בסיס תשובות ל- 8 שאלות פשוטות הכוללות סימפטומים שתוארו כנלווים לזיהום ב- COVID-19. המודל פותח על בסיס נתונים מהשאלון הארצי שכלל דיווח על סימפטומים ותוצאות בדיקות חיוביות ל- COVID-19.</p>
+      <p i18n>אתר זה פותח לצורך הנגשת המאמר "את מי עלינו לבדוק ל- COVID-19? מודל תעדוף על בסיס סקר סימפטומיםתסמינים ארצי". במאמר זה פיתחנו מודל שמעריך את ההסתברות לבדיקה חיובית ל- COVID-19  על בסיס תשובות ל- 8 שאלות פשוטות הכוללות סימפטומיםתסמינים שתוארו כנלווים לזיהום ב- COVID-19. המודל פותח על בסיס נתונים מהשאלון הארצי שכלל דיווח על סימפטומיםתסמינים ותוצאות בדיקות חיוביות ל- COVID-19..</p>
       <p>
         <span i18n>חשוב לציין, שהבדיקות לקורונה מבוצעות בארץ על פי </span>&nbsp;
         <a href='https://www.health.gov.il/Subjects/disease/corona/Pages/default.aspx' target='_blank' i18n>מדיניות משרד הבריאות הישראלי</a>.

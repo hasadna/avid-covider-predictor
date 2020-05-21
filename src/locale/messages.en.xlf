@@ -1,0 +1,190 @@
+<?xml version="1.0" ?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file datatype="plaintext" original="ng2.template" source-language="he" target-language="en">
+    <body>
+      <trans-unit datatype="html" id="0b9cb1549b34a5c1447e866b4f3f50387eb4c583">
+        <source>מגדר</source>
+        <target>Gender</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="001dbd92bbb1b5f0f54b4b855ee23b6fc30d8fa6">
+        <source>זכר</source>
+        <target>Male</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="70bd2b6f00e26c0249df551124a6fdb0aa25a2f8">
+        <source>נקבה</source>
+        <target>Female</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="35fa6855379593eb10f95979c2e2c779d161f454">
+        <source>אחר</source>
+        <target>Other</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="e2bafa5f5154a43684007edd6771729fd1ff88d6">
+        <source>קבוצת גיל</source>
+        <target>Age group</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="0db7e4032a20b662364cf6df5bd03426649c81c8">
+        <source>תסמינים</source>
+        <target>Symptoms</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="c02c529f9cbd9b98abe00a9b839c176c3705b380">
+        <source>הרגשה כללית רעה</source>
+        <target>Not feeling well</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="054228a3e956e3421a5446f496a551fde349e701">
+        <source>שיעולים או נזלת</source>
+        <target>Coughing or a runny nose</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="8dbfe2ed5b689f02257bec6bf3e062a3be4180dc">
+        <source>קוצר נשימה</source>
+        <target>Shortness of breath</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="88eab56f1e34a2ff16d251e039c8fcfc2472b89a">
+        <source>אובדן חוש טעם או ריח</source>
+        <target>Loss of sense of taste or smell</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="40379945e44dc7d20b6b3b4d5f6224e729ab68bb">
+        <source>כאבי גרון</source>
+        <target>Sore throat</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="a4e24975ae944f26a67b6d51a558072cd511ddf0">
+        <source>חום גוף מעל 38 מעלות</source>
+        <target>Body temperature over 38C°</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="24c924003873966d3b1846a711cf4537552d2f6f">
+        <source>אף אחד מאלו</source>
+        <target>None of the above</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="5ce21c41e1c68b58416955388c539f2d4b57b784">
+        <source>דירוג התסמינים המשוקלל שלך הוא</source>
+        <target>Your calculated symptoms score is</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="ca38fecbdfac5d227144239b9b294626e70b9758">
+        <source>דירוג זה משקף את הדמיון של התסמינים שדווחו לאלו של אנשים שדיווחו על אבחנה חיובית של קורונה (COVID-19) במחקר הנ&quot;ל.</source>
+        <target>This score reflects how similar your symptoms and demographic features are to those who tested positive to COVID-19 in this study.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="8b87771a847016e2675f525245476dbdbf621373">
+        <source>במידה ויש לך שאלות על מצבך הרפואי, אנא פנה לרופא שלך.</source>
+        <target>If you have any questions about your health risks, please contact your physician.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="d8257d8f6a2a22113d51a709eb965506f3cd77d1">
+        <source>שקלול תסמינים לסיכוי לתוצאה חיובית בבדיקת קורונה (COVID-19)</source>
+        <target>Integration of symptoms to the likelihood of a positive COVID-19 PCR test result</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="7272100425b1ebe4d5c331b041a72285074f042c">
+        <source>אתר זה פותח לצורך הנגשת המאמר &quot;את מי עלינו לבדוק ל- COVID-19? מודל תעדוף על בסיס סקר סימפטומיםתסמינים ארצי&quot;. במאמר זה פיתחנו מודל שמעריך את ההסתברות לבדיקה חיובית ל- COVID-19  על בסיס תשובות ל- 8 שאלות פשוטות הכוללות סימפטומיםתסמינים שתוארו כנלווים לזיהום ב- COVID-19. המודל פותח על בסיס נתונים מהשאלון הארצי שכלל דיווח על סימפטומיםתסמינים ותוצאות בדיקות חיוביות ל- COVID-19..</source>
+        <target>This website accompanies the paper “Who should we test for COVID-19? A triage model built from national symptom surveys”, where we devised a model that estimates the probability of an individual to test positive for COVID-19 based on answers to 8 simple questions that include symptoms associated with COVID-19 infection. Our model was devised from national symptom survey data that we distributed in Israel in which individuals self-reported symptoms and positive test results to COVID-19 in Israel.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="419d1dc56261f41cf83b1b2ffe05f8bab512b60f">
+        <source>חשוב לציין, שהבדיקות לקורונה מבוצעות בארץ על פי </source>
+        <target>Of note, COVID-19 testing in Israel is being performed according to the</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="0e32819325aff5a26023c22de152b22e9e5c3f8d">
+        <source>מדיניות משרד הבריאות הישראלי</source>
+        <target>guidelines of the Israeli Ministry of Health</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="547177ef8e28543b990886b38210c60b3a3210c6">
+        <source>מאחר והמודל פותח על נתונים של אנשים מבוגרים בלבד, לא ניתן להשתמש בו בילדים.</source>
+        <target>Since the model was developed solely on adults data, it is not applicable for children.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="124df6a88380361352dd5d271922170ae4ea5ab3">
+        <source>לשאלון</source>
+        <target>The Survey</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="a0843de0a64adcc7ee6a946408b6876cd8abdcae">
+        <source>English</source>
+        <target>עברית</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
